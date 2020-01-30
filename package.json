@@ -37,5 +37,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "The Vue ToDo app",
+  "main": "index.js",
+  "author": "Patrick Garcia <patrickvicentegarcia@gmail.com>",
+  "license": "MIT"
 }
