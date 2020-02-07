@@ -41,5 +41,6 @@
   "description": "The Vue ToDo app",
   "main": "index.js",
   "author": "Patrick Garcia <patrickvicentegarcia@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/trickvg/vue-todo.git"
 }
