@@ -15,39 +15,39 @@
 </template>
 
 <script>
-import ToDoItem from "./ToDoItem.vue";
-import Logo from "../assets/logo.png";
+import ToDoItem from './ToDoItem.vue';
+import Logo from '../assets/logo.png';
 
 export default {
-    name: "ToDo",
-    components: {
-        ToDoItem
-    },
-data() {
+  name: 'ToDo',
+  components: {
+    ToDoItem,
+  },
+  data() {
     return {
-        list: [{ id: 1, text: "clean the house" }, { id: 2, text: "buy milk" }],
-        todo: "",
-        logo: Logo
+      list: [{ id: 1, text: 'clean the house' }, { id: 2, text: 'buy milk' }],
+      todo: '',
+      logo: Logo,
     };
-},
-methods: {
+  },
+  methods: {
     createNewToDoItem() {
-      //validate ToDo
-    if (!this.todo) {
+      // validate ToDo
+      if (!this.todo) {
         alert("It's empty! Please enter a todo...");
         return;
-    }
+      }
 
-    const newId = this.list.length
-        ? Math.max.apply(null, this.list.map(t => t.id)) + 1
+      const newId = this.list.length
+        ? Math.max.apply(null, this.list.map((t) => t.id)) + 1
         : 1;
-        this.list.push({ id: newId, text: this.todo });
-        this.todo = "";
+      this.list.push({ id: newId, text: this.todo });
+      this.todo = '';
     },
     onDeleteItem(id) {
-        this.list = this.list.filter(item => item.id !== id);
-    }
-}
+      this.list = this.list.filter((item) => item.id !== id);
+    },
+  },
 };
 </script>
 

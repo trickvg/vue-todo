@@ -7,13 +7,13 @@
 
 <script>
 export default {
-    name: "ToDoItem",
-    props: ["item"],
-    methods: {
+  name: 'ToDoItem',
+  props: ['item'],
+  methods: {
     deleteItem(id) {
-        this.$emit("delete", id);
-    }
-    }
+      this.$emit('delete', id);
+    },
+  },
 };
 </script>
 
